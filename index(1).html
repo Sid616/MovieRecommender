@@ -1,0 +1,887 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name=" view detailsport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title> movie-Track</title>
+</head>
+<style>
+  h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bolder;
+    color: coral;
+    font-size: 4.0rem;
+  }
+
+  h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bolder;
+  }
+
+  h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bolder;
+    color: rgb(4, 2, 17);
+  }
+
+  #dropdownMenuButton1 {
+    width: 100px;
+    margin-right: 12px;
+    font-family: 'Abril Fatface', cursive;
+  }
+
+ 
+
+  #social {
+    margin-right: 10px;
+    font-size: larger;
+  }
+</style>
+
+<body>
+  <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li>
+            <h2 href="#" class="nav-link px-2 text-white">Home</h2>
+          </li>
+          <li>
+            <h2 href="#" class="nav-link px-2 text-white">Top-Movies</h2>
+          </li>
+          <li>
+            <a href="about.html">
+              <h2 class="nav-link px-2 text-white">About</h2>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              <h2 class="nav-link px-2 text-white">Contact</h2>
+            </a>
+          </li>
+        </ul>
+
+        <div class="text-end">
+          <a href="login.html"><button type="button" class="btn btn-outline-primary">login</button></a>
+          <a href="register.html"><button type="button" class="btn btn-outline-warning">Sign-up</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="py-2 text-center container">
+    <div class="row py-lg-2">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light"> Movie-Track</h1>
+        <p class="lead text-muted">Welcome to Movie-Track!</p><br>
+        <div>
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Genres
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Thriller</a></li>
+                  <li><a class="dropdown-item" href="#">Romance</a></li>
+                  <li><a class="dropdown-item" href="#">Horror</a></li>
+                  <li><a class="dropdown-item" href="#">Psychological Thriller</a></li>
+                  <li><a class="dropdown-item" href="#">Fantsasy</a></li>
+                  <li><a class="dropdown-item" href="#">Mystery</a></li>
+                  <li><a class="dropdown-item" href="#">Comedy</a></li>
+                  <li><a class="dropdown-item" href="#">Fiction</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Years
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">2001-2005</a></li>
+                  <li><a class="dropdown-item" href="#">2006-2010</a></li>
+                  <li><a class="dropdown-item" href="#">2011-2015</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="album py-2 bg-light"><br>
+    <div class="container" id="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/us.jpg" alt="error loading image" width="100%" height="225">
+            <!--  <svg class="bd-placeholder-img card-img-top" width="70%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" preserveAspectRatio="xMidYMid slice" focusable="false" 
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>-->
+
+            <div class="card-body">
+              <p class="card-text">The film follows Adelaide Wilson (Nyong'o) and her family, who are attacked by
+                a group of menacing doppelgängers.</p><br><br><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-target="#usModalToggle"
+                    data-bs-toggle="modal"> view details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal for movie details-->
+        <div class="modal fade" id="usModalToggle" aria-hidden="true" aria-labelledby="usModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="usModalToggleLabel">Login to explore more!</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4> US(2019)</h4><br>
+                Adelaide Wilson and her family are attacked by mysterious figures dressed in red. Upon closer
+                inspection, the Wilsons realise that the intruders are exact lookalikes of them.<br>
+                <br>
+                Release date: 29 March 2019 (India)<br>
+                Director: Jordan Peele<br>
+                Box office: 25.52 crores USD<br>
+                Music by: Michael Abels<br>
+                Production; companies: <aMonkeypaw Productions/a>; <aPerfect World Pictures/a><br>
+                    Cinematography: Mike Gioulakis<br>
+              </div>
+              <div class="modal-footer">
+
+                <button class="btn btn-outline-info" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal"><i class="fa fa-circle-heart"></i> Like</button>
+                <button class="btn btn-outline-warning" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">Already Watched</button>
+                <button class="btn btn-outline-secondary" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">+ Watchlist</button>
+                <a href="login.html"><button class="btn btn-danger" id="login" data-bs-target="#usModalToggle"
+                    data-bs-toggle="modal" data-bs-dismiss="modal">Login</button></a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/joker.jpg" alt="error loading image" width="100%" height="225">
+            <!--  <svg class="bd-placeholder-img card-img-top" width="70%" height="225" xmlns="http://www.w3.org/2000/svg"
+            role="img" preserveAspectRatio="xMidYMid slice" focusable="false" 
+            <rect width="100%" height="100%" fill="#55595c"></rect>
+          </svg>-->
+
+            <div class="card-body">
+              <p class="card-text">In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and
+                mistreated
+                by society. He then embarks on a downward spiral of
+                revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-target="#jokerModalToggle"
+                    data-bs-toggle="modal"> view details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal for movie details-->
+        <div class="modal fade" id="jokerModalToggle" aria-hidden="true" aria-labelledby="jokerModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="jokerModalToggleLabel">Login to explore more!</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4> JOKER(2019)</h4><br>
+                In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society.
+                He
+                then embarks on a downward spiral of revolution and bloody crime. This path brings him
+                face-to-face
+                with
+                his alter-ego: the Joker.<br><br>
+
+                Release date: 2 October 2019 (India)<br>
+                Director: Todd Phillips<br>
+                Music by: Hildur Guðnadóttir<br>
+                Box office: $1.074 billion<br>
+                Based on: Characters; by DC Comics<br>
+                Awards: Academy Award for Best Actor in a Leading Role, MORE<br>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-outline-warning" id="alreadywatched" data-bs-target="#usModalToggle"
+                  data-bs-toggle="modal" data-bs-dismiss="modal">Already Watched</button>
+                <button class="btn btn-outline-secondary" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">+ Watchlist</button>
+                <a href="login.html"><button class="btn btn-danger" data-bs-target="#jokerModalToggle"
+                    data-bs-toggle="modal" data-bs-dismiss="modal">Login</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/spidy.jpg" alt="error loading image" width="100%" height="225">
+            <!--  <svg class="bd-placeholder-img card-img-top" width="70%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" preserveAspectRatio="xMidYMid slice" focusable="false" 
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>-->
+
+            <div class="card-body">
+              <p class="card-text">Following the events of Avengers: Endgame, Peter Parker returns in
+                Spider-Man: Far From Home.
+                Our friendly neighborhood Super Hero decides to join his best friends Ned, MJ, and the rest of the
+                gang
+                on a European vacation.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-target="#spidyModalToggle"
+                    data-bs-toggle="modal"> view details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal for movie details-->
+        <div class="modal fade" id="spidyModalToggle" aria-hidden="true" aria-labelledby="spidyModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="spidyModalToggleLabel">Login to explore more!</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4> SPIDERMAN:FAR FROM HOME(2019)</h4><br>
+                Peter Parker, the beloved superhero Spider-Man, faces four destructive elemental monsters while on
+                holiday in Europe. Soon, he receives help from Mysterio, a fellow hero with mysterious
+                origins.<br><br>
+                Release date: 2 July 2019 (USA)<br>
+                Director: Jon Watts<br>
+                Box office: $1.132 billion<br>
+                Budget: $160 million<br>
+                Written by: Chris McKenna; Erik Sommers<br>
+                Cinematography: Matthew J. Lloyd<br>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-outline-warning" id="alreadywatched" data-bs-target="#usModalToggle"
+                  data-bs-toggle="modal" data-bs-dismiss="modal">Already Watched</button>
+                <button class="btn btn-outline-secondary" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">+ Watchlist</button>
+                <a href="login.html"><button class="btn btn-danger" data-bs-target="#spidyModalToggle"
+                    data-bs-toggle="modal" data-bs-dismiss="modal">Login</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/parasite.jpg" alt="error loading image" width="100%" height="225">
+            <!--  <svg class="bd-placeholder-img card-img-top" width="70%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" preserveAspectRatio="xMidYMid slice" focusable="false" 
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>-->
+
+            <div class="card-body">
+              <p class="card-text">
+                The thriller focuses on a give-and-take relationship between the Kim and Park families, built
+                under
+                false pretenses.
+                Hulu recently added the film to its streaming library.</p><br><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-target="#parModalToggle"
+                    data-bs-toggle="modal"> view details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal for movie details-->
+        <div class="modal fade" id="parModalToggle" aria-hidden="true" aria-labelledby="parModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="parModalToggleLabel">Login to explore more!</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4> PARASITE(2019)</h4><br>
+                The struggling Kim family sees an opportunity when the son starts working for the wealthy Park
+                family.
+                Soon, all of them find a way to work within the same household and start living a parasitic
+                life.<br><br>
+                Release date: 30 May 2019 (South Korea)<br>
+                Director: Bong Joon-ho<br>
+                Box office: $259 million<br>
+                Budget: ₩17.0 billion; (~US$15.5 million)<br>
+                Music by: Jung Jae-il<br>
+                Awards: Academy Award for Best Picture, Palme d'Or, MORE<br>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-outline-warning" id="alreadywatched" data-bs-target="#usModalToggle"
+                  data-bs-toggle="modal" data-bs-dismiss="modal">Already Watched</button>
+                <button class="btn btn-outline-secondary" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">+ Watchlist</button>
+                <a href="login.html"><button class="btn btn-danger" data-bs-target="#parModalToggle"
+                    data-bs-toggle="modal" data-bs-dismiss="modal">Login</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/IT.jpg" alt="error loading image" width="100%" height="225">
+            <!--  <svg class="bd-placeholder-img card-img-top" width="70%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" preserveAspectRatio="xMidYMid slice" focusable="false" 
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>-->
+
+
+            <div class="card-body">
+              <p class="card-text">Twenty-seven years after their first encounter with the terrifying Pennywise,
+                the Losers Club have grown up and moved away, until a devastating phone call brings them back.</p>
+              <br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-target="#ITModalToggle"
+                    data-bs-toggle="modal"> view details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal for movie details-->
+        <div class="modal fade" id="ITModalToggle" aria-hidden="true" aria-labelledby="ITModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="ITModalToggleLabel">Login to explore more!</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4> IT:CHAPTER 2(2019)</h4><br>
+                After 27 years, the Losers Club receive a call from their friend Mike Hanlon that Pennywise is
+                back.
+                They decide to honour their promise and return to their old town to end the evil clown for good.
+                Release date: 6 September 2019 (USA)<br><br>
+                Director: Andrés Muschietti<br>
+                Budget: $79 million<br>
+                Adapted from: It<br>
+                Music by: Benjamin Wallfisch<br>
+                Screenplay by: Gary Dauberman <br>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-outline-warning" id="alreadywatched" data-bs-target="#usModalToggle"
+                  data-bs-toggle="modal" data-bs-dismiss="modal">Already Watched</button>
+                <button class="btn btn-outline-secondary" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">+ Watchlist</button>
+                <a href="login.html"><button class="btn btn-danger" data-bs-target="#ITModalToggle"
+                    data-bs-toggle="modal" data-bs-dismiss="modal">Login</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/tenet.jpg" alt="error loading image" width="100%" height="225">
+            <!--  <svg class="bd-placeholder-img card-img-top" width="70%" height="225" xmlns="http://www.w3.org/2000/svg"
+            role="img" preserveAspectRatio="xMidYMid slice" focusable="false" 
+            <rect width="100%" height="100%" fill="#55595c"></rect>
+          </svg>-->
+
+
+            <div class="card-body">
+              <p class="card-text">Armed with only one word, Tenet, and fighting for the survival of the entire
+                world,
+                a Protagonist journeys through a twilight world of international espionage on a mission that will
+                unfold
+                in something beyond real time.</p><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-target="#tenetModalToggle"
+                    data-bs-toggle="modal"> view details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal for movie details-->
+        <div class="modal fade" id="tenetModalToggle" aria-hidden="true" aria-labelledby="tenetModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="tenetModalToggleLabel">Login to explore more!</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4> TENET(2020)</h4><br>
+                When a few objects that can be manipulated and used as weapons in the future fall into the wrong
+                hands,
+                a CIA operative, known as the Protagonist, must save the world.
+                Release date: 4 December 2020 (India)<br><br>
+                Director: Christopher Nolan<br>
+                Box office: $363.7 million<br>
+                Music by: Ludwig Göransson<br>
+                Production; companies: Warner Bros. Pictures; Syncopy<br>
+                Cinematography: Hoyte van Hoytema<br>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-outline-warning" id="alreadywatched" data-bs-target="#usModalToggle"
+                  data-bs-toggle="modal" data-bs-dismiss="modal">Already Watched</button>
+                <button class="btn btn-outline-secondary" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">+ Watchlist</button>
+                <a href="login.html"><button class="btn btn-danger" data-bs-target="#tenetModalToggle"
+                    data-bs-toggle="modal" data-bs-dismiss="modal">Login</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/annabelle.jpg" alt="error loading image" width="100%" height="225">
+            <!--  <svg class="bd-placeholder-img card-img-top" width="70%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" preserveAspectRatio="xMidYMid slice" focusable="false" 
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>-->
+
+
+            <div class="card-body">
+              <p class="card-text">A couple begins to experience terrifying supernatural occurrences involving a
+                vintage doll shortly after their home is invaded by satanic cultists.</p><br><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-target="#annaModalToggle"
+                    data-bs-toggle="modal"> view details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal for movie details-->
+        <div class="modal fade" id="annaModalToggle" aria-hidden="true" aria-labelledby="annaModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="tenetModalToggleLabel">Login to explore more!</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4> ANNABELLE(2014)</h4><br>
+                John and Mia Form are attacked by members of a satanic cult, who use their vintage doll as a
+                conduit
+                to
+                make their life miserable. This unleashes a string of paranormal events in the Forms' residence.
+                Release date: 3 October 2014 (USA)<br><br>
+                Director: John R. Leonetti<br>
+                Music by: Joseph Bishara<br>
+                Box office: $257.6 million<br>
+                Written by: Gary Dauberman<br>
+                Produced by: Peter Safran; James Wan<br>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-outline-warning" id="alreadywatched" data-bs-target="#usModalToggle"
+                  data-bs-toggle="modal" data-bs-dismiss="modal">Already Watched</button>
+                <button class="btn btn-outline-secondary" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">+ Watchlist</button>
+                <a href="login.html"><button class="btn btn-danger" data-bs-target="#tenetModalToggle"
+                    data-bs-toggle="modal" data-bs-dismiss="modal">Login</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/DC.jpg" alt="error loading image" width="100%" height="225">
+            <!--  <svg class="bd-placeholder-img card-img-top" width="70%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" preserveAspectRatio="xMidYMid slice" focusable="false" 
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>-->
+
+
+            <div class="card-body">
+              <p class="card-text">Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne
+                aligns forces with Diana Prince with plans
+                to recruit a team of metahumans to protect the world from an approaching threat of catastrophic
+                proportions.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-target="#dcModalToggle"
+                    data-bs-toggle="modal"> view details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal for movie details-->
+        <div class="modal fade" id="dcModalToggle" aria-hidden="true" aria-labelledby="dcModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="dcModalToggleLabel">Login to explore more!</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4> JUSTICE LEAGUE:SYNDER'S CUT(2014)</h4><br>
+                Bruce Wayne and Diana Prince try to bring the metahumans of Earth together after the death of
+                Clark
+                Kent. Meanwhile, Darkseid sends Steppenwolf to Earth with a vast army to subjugate humans.<br><br>
+                Initial release: 18 March 2021<br>
+                Director: Zack Snyder<br>
+                Budget: $70 million<br>
+                Story by: Chris Terrio; Zack Snyder; Will Beall<br>
+                Music by: Tom Holkenborg<br>
+                Produced by: Charles Roven; Deborah Snyder<br>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-outline-warning" id="alreadywatched" data-bs-target="#usModalToggle"
+                  data-bs-toggle="modal" data-bs-dismiss="modal">Already Watched</button>
+                <button class="btn btn-outline-secondary" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">+ Watchlist</button>
+                <a href="login.html"><button class="btn btn-danger" data-bs-target="dcModalToggle"
+                    data-bs-toggle="modal" data-bs-dismiss="modal">Login</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/avengers.jpg" alt="error loading image" width="100%" height="225">
+            <!--  <svg class="bd-placeholder-img card-img-top" width="70%" height="225" xmlns="http://www.w3.org/2000/svg"
+            role="img" preserveAspectRatio="xMidYMid slice" focusable="false" 
+            <rect width="100%" height="100%" fill="#55595c"></rect>
+          </svg>-->
+
+
+            <div class="card-body">
+              <p class="card-text">After the devastating events of Avengers: Infinity War (2018), the universe is
+                in
+                ruins. With the help of remaining allies,
+                the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the
+                universe.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-target="#avengersModalToggle"
+                    data-bs-toggle="modal"> view details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal for movie details-->
+        <div class="modal fade" id="avengersModalToggle" aria-hidden="true" aria-labelledby="avengersModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="avengersModalToggleLabel">Login to explore more!</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4> AVENGERS:ENDGAME(2019)</h4><br>
+                After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must
+                reunite
+                and assemble again to reinvigorate their trounced allies and restore balance.<br><br>
+                Release date: 26 April 2019 (India)<br>
+                Box office: 279.75 crores USD<br>
+                Budget: 35.6 crores USD (2019)<br>
+                Directed by: : Anthony Russo; Joe Russo;<br>
+                Music by: Alan Silvestri<br>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-outline-warning" id="alreadywatched" data-bs-target="#usModalToggle"
+                  data-bs-toggle="modal" data-bs-dismiss="modal">Already Watched</button>
+                <button class="btn btn-outline-secondary" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">+ Watchlist</button>
+                <a href="login.html"><button class="btn btn-danger" data-bs-target="#avengersModalToggle"
+                    data-bs-toggle="modal" data-bs-dismiss="modal">Login</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/johnwick.jpg" alt="error loading image" width="100%" height="225">
+            <!--  <svg class="bd-placeholder-img card-img-top" width="70%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" preserveAspectRatio="xMidYMid slice" focusable="false" 
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>-->
+
+
+            <div class="card-body">
+              <p class="card-text">John Wick is on the run after killing a member of the international assassins'
+                guild,
+                and with a $14 million price tag on his head, he is the target of hit men and women everywhere.
+              </p>
+              <br><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-target="#johnwickModalToggle"
+                    data-bs-toggle="modal"> view details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal for movie details-->
+        <div class="modal fade" id="johnwickModalToggle" aria-hidden="true" aria-labelledby="johnwickModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="johnwickModalToggleLabel">Login to explore more!</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4> JOHN WICK:CHAPTER 3(2019)</h4><br>
+                John Wick is declared excommunicado and a hefty bounty is set on him after he murders an
+                international
+                crime lord. He sets out to seek help to save himself from ruthless hitmen and bounty
+                hunters.<br><br>
+                Release date: 9 May 2019 (Brooklyn)<br>
+                Director: Chad Stahelski<br>
+                Story by: Derek Kolstad<br>
+                Box office: 32.73 crores USD<br>
+                Music by: Tyler Bates; Joel J. Richard<br>
+                Produced by: Basil Iwanyk; Erica Lee<br>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-outline-warning" id="alreadywatched" data-bs-target="#usModalToggle"
+                  data-bs-toggle="modal" data-bs-dismiss="modal">Already Watched</button>
+                <button class="btn btn-outline-secondary" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">+ Watchlist</button>
+                <a href="login.html"><button class="btn btn-danger" data-bs-target="#johnwickModalToggle"
+                    data-bs-toggle="modal" data-bs-dismiss="modal">Login</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/avatar.jpeg" alt="error loading image" width="100%" height="225">
+            <!--  <svg class="bd-placeholder-img card-img-top" width="70%" height="225" xmlns="http://www.w3.org/2000/svg"
+            role="img" preserveAspectRatio="xMidYMid slice" focusable="false" 
+            <rect width="100%" height="100%" fill="#55595c"></rect>
+          </svg>-->
+
+
+            <div class="card-body">
+              <p class="card-text">A paraplegic Marine dispatched to the moon Pandora on a unique mission
+                becomes torn between following his orders and protecting the world he feels is his home.</p>
+              <br><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-target="#avatarModalToggle"
+                    data-bs-toggle="modal"> view details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal for movie details-->
+        <div class="modal fade" id="avatarModalToggle" aria-hidden="true" aria-labelledby="avatarModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="usModalToggleLabel">Login to explore more!</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4> AVATAR(2009)</h4><br>
+                Jake, who is paraplegic, replaces his twin on the Na'vi inhabited Pandora for a corporate mission.
+                After
+                the natives accept him as one of their own, he must decide where his loyalties lie.<br><br>
+                Release date: 18 December 2009 (India)<br>
+                Box office: 284.72 crores USD<br>
+                Budget: 23.7 crores USD (2009)<br>
+                Film series: Avatar<br>
+                Awards: Academy Award for Best Cinematography, MORE<br>
+                Characters: Neytiri, Jake Sully, Tsu'tey, Colonel Miles Quaritch, MORE<br>
+                Director: James Cameron<br>
+                Production companies: Lightstorm Entertainment, MORE<br>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-outline-warning" id="alreadywatched" data-bs-target="#usModalToggle"
+                  data-bs-toggle="modal" data-bs-dismiss="modal">Already Watched</button>
+                <button class="btn btn-outline-secondary" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">+ Watchlist</button>
+                <a href="login.html"><button class="btn btn-danger" data-bs-target="#avatarModalToggle"
+                    data-bs-toggle="modal" data-bs-dismiss="modal">Login</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/quiet.jpg" alt="error loading image" width="100%" height="225">
+            <!--  <svg class="bd-placeholder-img card-img-top" width="70%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" preserveAspectRatio="xMidYMid slice" focusable="false" 
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>-->
+
+            <div class="card-body">
+              <p class="card-text">Following the events at home, the Abbott family now face the terrors of the
+                outside
+                world. Forced to venture into the unknown,
+                they realize the creatures that hunt by sound are not the only threats lurking beyond the sand
+                path.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-bs-target="#quietModalToggle"
+                    data-bs-toggle="modal"> view details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal for movie details-->
+        <div class="modal fade" id="quietModalToggle" aria-hidden="true" aria-labelledby="quietModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="usModalToggleLabel">Login to explore more!</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4> A QUIET PLACE II(2021)</h4><br>
+                Following the deadly events at home, the Abbott family must now face the terrors of the outside
+                world
+                as
+                they continue their fight for survival in silence. Forced to venture into the unknown, they
+                quickly
+                realize that the creatures that hunt by sound are not the only threats that lurk beyond the sand
+                path.<br><br>
+                Release date: 28 May 2021 (USA)<br>
+                Director: John Krasinski<br>
+                Character: Emily Blunt,Millicent Simmonds,Cillian Murphy<br>
+                Box office: $297.4 million<br>
+                Production; companies: Platinum Dunes; Sunday Night Productions<br>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-outline-warning" id="alreadywatched" data-bs-target="#usModalToggle"
+                  data-bs-toggle="modal" data-bs-dismiss="modal">Already Watched</button>
+                <button class="btn btn-outline-secondary" data-bs-target="#usModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">+ Watchlist</button>
+                <button class="btn btn-danger" data-bs-target="#quietModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="text-muted">2021 Movie-Track, Inc</span>
+        </div>
+        <div>
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li>
+              <a href="https://www.facebook.com/search/top?q=artisanal_view" id="social"><i
+                  class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/artisanal_view/" id="social"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#" id="social"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" id="social"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
